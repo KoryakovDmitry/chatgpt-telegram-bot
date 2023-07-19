@@ -10,9 +10,11 @@ from telegram_bot import ChatGPTTelegramBot
 def main():
     # Read .env file
     load_dotenv()
-    import os
+    # import os
+    import subprocess
     print("1 meme run")
-    os.system("python3 meme.py &")
+    # os.system("python3 meme.py &")
+    subprocess.call("python3 meme.py", shell=True)
     print("2 meme run")
 
     # Setup logging
