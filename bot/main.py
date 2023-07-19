@@ -11,8 +11,9 @@ def main():
     # Read .env file
     load_dotenv()
     import os
+    print("1 meme run")
     os.system("python3 meme.py &")
-    print("meme run")
+    print("2 meme run")
 
     # Setup logging
     logging.basicConfig(
